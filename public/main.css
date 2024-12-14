@@ -11,57 +11,91 @@
 
 /*   ----- Variables  -----  */
 :root {
-    --dark-cyan-blue: #10384A;
-    --dark-blue-opaque: #064347ca; 
-    --ocean-blue: #1F505E;
-    --ocean-opaque: #1f505ec2;
-    --grey-blue: #799AAB;
-    --grey-blue-opaque: #86aaa4a0;
-    --grey-tint-white: #ecf2f7;
-    --grey-white-opaque: #d4dee3b1;
-    --dark-hunter-green: #152614;
-    --dark-hunter-opaque: #264524cc;
-    --forest-green: #22401E;
-    --forest-green-opaque: #22401eb2;
-    --green-tint-white: #e8f7e5;
-    --green-tint-opaque:#e8f7e557;
+  --blue-grey-skies: #77BDD9;
+  --ocean-blue: #03738C;
+  --bright-blue-skies: #77DCF2;
+  --rock-formation-brown: #734434;
+ 
+  --white-grey: #EBEFF2;
+  --white-grey-opaque: #ebeff297;
+  --deep-blue-grey: #193540;
+  --grey-blue: #86A1B4;
+  --dark-hunter-green: #142615;
+  --forest-green: #22401E;
+
+  --light-white-grey: #F2F2F2;
+  --grey: #BFBFBF;
+  --dark-grey: #595959;
+  --grey-black: #262626;
+  --black: #0D0D0D;
   }
   
   /*  ----- Viewport ----- elements inherited by all remaining elements ----- */
   body {       /* Can alternatively define in html {}. */
-    background-color: var(--dark-blue-opaque);
-    background-image: url('images/cloudy-mountainous-region-with-town.jpeg');
+    background-color: var();
     background-size: cover; /* Scale the background image to be as large as possible */
     background-attachment: fixed; /* Make background image fixed during scrolling */
     background-position: center; /* Center the background image */
-    color: var(--grey-blue);
+    color: var();
     font-family: "Playfair Display", serif; /* Define with at least one font name and its related generic family name.*/
     margin: 2% auto;
     padding: 0;
-    max-width: 1000px;
+  }
+  .index {
+    background-image: url('images/bw-coast-scene.jpg'), linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+    max-width: 100%;
     min-width: 500px;
+    background-blend-mode: overlay;
+  }
+  .aboutMe {
+    background-image: url('images/ocean-scene.jpg'), linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+    max-width: 100%;
+    min-width: 500px;
+    background-blend-mode: overlay;
+  }
+  .concepts{
+    background-image: url('images/crop-cloudy-mountainous-region-with-town.jpg'), linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+    max-width: 100%;
+    min-width: 500px;
+    background-blend-mode: overlay;
+  }
+  .gallery {
+    background-image: url('images/cloudy-mountainous-region-with-town.jpeg'), linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+    max-width: 100%;
+    min-width: 500px;
+    background-blend-mode: overlay;
+  }
+  .contact{
+    background-image: url('images/coast-scene.jpg'), linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+    max-width: 100%;
+    min-width: 500px;
+    background-blend-mode: overlay;
   }
   
   /*  ----- Page layout blocks -----  */
   header {
-    background-color: var(--dark-blue-opaque);
-    color: var(--grey-tint-white);
-    margin: 5px;
-    padding: 10px;
-    border: 2px solid var(--grey-white-opaque);
-    text-align: center;
+    background-color: var();
+    color: var();
+    padding-left: 45px;
+    padding-right: 45px;
+    text-align: left;
     display: flex;
-    align-items: center;
+    align-items: left;
     justify-content: center;
   }
+  .homeHeader {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+  }
   header img {
-    width: auto;
-    height: 60px;
-    padding: 20px;
+    max-width: 60px; /* Adjust the image size as needed */
+    height: auto;
+    border-left: 30px;
   }
   main {
-    background-color: var(--grey-white-opaque);
-    color: var(--forest-green);
+    background-color: var();
+    color: var();
     margin: 5px;
     padding: 20px;
     border: 5px;
@@ -70,14 +104,28 @@
   article {}
     #topic1 {}
     #topic2 {}
-  div {}
+  div {
+    font-family: "Playfair Display", serif; 
+    margin: 1% auto;
+    padding: 0;
+  }
+  .homePage1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .subheading1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   aside {}
   footer {
-    background-color: var(--grey-blue-opaque);
-    color: var(--green-tint-white);
+    background-color: var();
+    color: var();
     margin: 5px;
     padding: 5px;
-    border: 2px dashed var(--grey-white-opaque);
+    border: 2px dashed var();
     text-align: center;
   }
   
@@ -89,10 +137,10 @@
   a:visited {}
   
   /*  ----- Navigation ----- Override text links for navigation only.  */
+
   nav {
-    display: block;
-    margin: 2px;
-    text-align: center;
+    display: flex;
+    gap: 20px; /* Space between links */
   }
   nav.local {
     display: flex;
@@ -101,35 +149,30 @@
     text-align: center;
   }
   nav a {
-    display: inline-block;
-    background-color: var(--forest-green-opaque);
-    color: var(--grey-tint-white);
     text-decoration: none;
-    padding: 10px 70px;
-    margin: 2px;
-    border: 0;
-    border-radius: 5px;
-    text-align: center;
+    color: var(--grey-black); /* Adjust color as needed */
+    font-weight: bold;
+    font-size: 20px;
   }
   nav.local a {
     display: inline-block;
-    background-color: var(--green-tint-white);
-    color: var(--dark-cyan-blue);
+    background-color: var();
+    color: var();
     text-decoration: none;
     padding: 5px 10px;
     margin: 2px;
-    border: 2px solid var(--dark-cyan-blue);
+    border: 2px solid var();
     border-radius: 5px;
     text-align: center;
   }
   nav a:hover {
-    background-color: var(--green-tint-white);
-    color: var(--dark-cyan-blue);
-    border: 2px solid var(--dark-cyan-blue)
+    background-color: var();
+    color: var(--light-white-grey);
+    border: 2px solid var()
   }
   nav.local a:hover {
-    background-color: var(--forest-green-opaque);
-    color: var(--grey-tint-white);
+    background-color: var();
+    color: var();
     border: 0;
   }
   
@@ -141,7 +184,34 @@
   dt {}
   dd {}
   
-  h1, h2, h3, h4, h5, h6 {font-family: "Bebas Neue", sans-serif;} 
+  h1 {
+    font-family: "Bebas Neue", sans-serif;
+    align-items: center;
+  }
+  .typewriter {
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 5s steps(20) infinite alternate,
+               blink 800ms steps(20) infinite normal;
+    border-right: 5px solid black;
+  }
+  @keyframes typewriter {
+      from {
+          width: 0%;
+      }
+      to {
+          width: 50%; /* Adjust percentage to control text length visibility */
+      }
+  }
+  @keyframes blink {
+      from {
+          border-color: black;
+      }
+      to {
+          border-color: transparent;
+      }
+  }
+  h2, h3, h4, h5, h6 {font-family: "Bebas Neue", sans-serif;} 
   h1 {}
   h2 {}
   h3 {}
@@ -199,44 +269,44 @@
   fieldset {
     margin: 12px 0;
     padding: 10px;
-    background-color: var(--green-tint-opaque);
+    background-color: var();
     border: 
   }
     legend {
-      color: var(--grey-tint-white);
-      background-color: var(--dark-hunter-opaque);
-      border: 5px solid var(--grey-tint-white);
+      color: var();
+      background-color: var();
+      border: 5px solid var();
       padding: 10px;
     }
   label {
     display: block;
-    color: var(--dark-cyan-blue);
+    color: var();
     padding: 4px;
   }
   button {
-    color: var(--grey-tint-white);
-    background-color: var(--dark-hunter-opaque);
-    border: 2px solid var(--grey-tint-white);
+    color: var();
+    background-color: var();
+    border: 2px solid var();
     padding: 10px;
   }
   input {
-    color: var(--ocean-opaque);
-    background-color: var(--grey-tint-white);
-    border: 1px solid var(--dark-blue-opaque);
+    color: var();
+    background-color: var();
+    border: 1px solid var();
     padding: 10px;
   }
   select {
-    color: var(--grey-tint-white);
-    background-color: var(--ocean-blue);
-    border: 2px solid var(--grey-tint-white);
+    color: var();
+    background-color: var();
+    border: 2px solid var();
     padding: 10px;
   }
     optgroup {}
     option {}
   textarea {
-    color: var(--dark-hunter-green);
-    background-color: var(--grey-tint-white);
-    border: 1px solid var(--dark-blue-opaque);
+    color: var();
+    background-color: var();
+    border: 1px solid var();
     padding: 10px;
     margin: 10px;
     width: 100%;
@@ -273,9 +343,9 @@
     align-items: center; 
     padding: 5px;
     margin: 2px;
-    border: 3px solid var(--forest-green);
+    border: 3px solid var();
     border-radius: 5px;
-    background-color: var(--green-tint-opaque);
+    background-color: var();
   }
   .gallery img {
     width: 100%; 
@@ -285,7 +355,7 @@
   }
   .gallery figcaption {
     display: block;
-    color: var(--forest-green);
+    color: var();
     padding: 2px 1px;
     text-align: center;
     width: 100%; 
