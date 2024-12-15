@@ -12,6 +12,7 @@
 /*   ----- Variables  -----  */
 :root {
   --blue-grey-skies: #77BDD9;
+  --blue-grey-skies-opaque: #77bdd97e;
   --ocean-blue: #03738C;
   --bright-blue-skies: #77DCF2;
   --rock-formation-brown: #734434;
@@ -101,7 +102,9 @@
     border: 5px;
   }
   section {}
-  article {}
+  article {
+    background-color: var(--white-grey-opaque);
+  }
     #topic1 {}
     #topic2 {}
   div {
