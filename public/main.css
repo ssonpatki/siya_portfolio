@@ -157,6 +157,20 @@
     font-weight: bold;
     font-size: 20px;
   }
+  .resumeLink {
+    color: var(--deep-blue-grey);
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Playfair Display", serif;
+  }
+  .resumeLink:hover {
+    color: var(--light-white-grey);
+    background-color: (var(--deep-blue-grey));
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Playfair Display", serif;
+  }
+
   nav.local a {
     display: inline-block;
     background-color: var();
@@ -291,6 +305,12 @@
     background-color: var();
     border: 2px solid var();
     padding: 10px;
+  }
+  .resumeButton {
+    background-color: var(--light-white-grey);
+  }
+  .resumeButton:hover {
+    background-color: var(--deep-blue-grey);
   }
   input {
     color: var();
