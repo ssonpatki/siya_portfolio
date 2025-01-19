@@ -33,7 +33,6 @@
   
   /*  ----- Viewport ----- elements inherited by all remaining elements ----- */
   body {       /* Can alternatively define in html {}. */
-    background-color: var();
     background-size: cover; /* Scale the background image to be as large as possible */
     background-attachment: fixed; /* Make background image fixed during scrolling */
     background-position: center; /* Center the background image */
@@ -103,6 +102,7 @@
   }
   section {}
   article {
+    padding: 10px;
     background-color: var(--white-grey-opaque);
   }
     #topic1 {}
@@ -111,6 +111,10 @@
     font-family: "Playfair Display", serif; 
     margin: 1% auto;
     padding: 0;
+  }
+  .container {
+    padding: 10px;
+    background-color: var(--white-grey-opaque);
   }
   .homePage1 {
     display: flex;
@@ -122,6 +126,19 @@
     justify-content: center;
     align-items: center;
   }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown:hover .dropdown-content {display: block;}
   aside {}
   footer {
     background-color: var();
@@ -135,7 +152,14 @@
   /* ----- Anchors ----- Text links */
   a {}
   a:link {}
+  .dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+  }
   a:hover {}
+  .dropdown-content a:hover {background-color: #ddd;}
+
   a:active {}
   a:visited {}
   
@@ -312,6 +336,13 @@
   .resumeButton:hover {
     background-color: var(--deep-blue-grey);
   }
+  .dropbtn {
+    background-color: var(--light-white-grey);
+    color: white;
+    font-size: 20px;
+    border: none;
+  }
+  .dropdown:hover .dropbtn {background-color: var(--deep-blue-grey);}
   input {
     color: var();
     background-color: var();
