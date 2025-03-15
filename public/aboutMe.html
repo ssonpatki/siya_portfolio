@@ -6,7 +6,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Siya Sonpatki</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='static/aboutMe.css'>
     <script src='main.js'></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -19,55 +19,246 @@
                src="android-chrome-192x192.png"
                alt="Light blue sqaure with rounded corners, with two, large, white letter S in the center"
            />
-        <nav>
-            <a href="index.html"><u>Home</u></a>
-            <a href="aboutMe.html"><u>About Me</u></a>
-            <a href="resume.html"><u>Resume</u></a>
-            <a href="contact.html"><u>Contact</u></a> 
-        <!-- Pages are in development: 
-            <a href="gallery.html"><u>Gallery</u></a>
-            <a href="concepts.html"><u>Web Dev Concepts</u></a>
-        -->
-        </nav>
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="aboutMe.html">About Me</a>
+            <a href="projects.html">Projects</a>
+            <a href="learning.html">Learning</a>
+            <a href="contact.html">Contact</a> 
+          </nav>
     </header>
     <main>
-      <h1>About Me</h1>
+      <div class="container">
+        <img src="images/sunset-over-lake.jpg" class="responsive-img">
+        <div class="centered">
+          <h1>
+            <span class="responsive-text">About Me</br >
+          </h1>
 
-      <!--
-      <nav class="local">
-        <a href="#sectionOne">Section One</a>
-        <a href="#portfolioLinks">Important Links</a>
-      </nav>
-      -->
+          <p>
+            <span class="responsive-body">
+            Pursuing an Honors Bachelors in Computer Science, at Oregon State University, with a focus in A.I. and minors in Spanish and Mathematics. 
+            Skilled in Python, Java, and SQL, with experience in machine learning algorithms, database management, and web development. A dedicated 
+            problem-solver with internship and leadership experience, efficient in collaborative and dynamic environments, and passionate about 
+            leveraging A.I. and software development to create innovative and impactful projects.
+            </span>
+          </p>
+
+          <a href="./sonpatkiResume.pdf">
+            <span class="responsive-body" style="background-color:black; padding: 1%;">Print Resume
+          </a>
+
+
+        </div>
+      </div>
 
       <div class="container">
-        <article id="sectionOne">
-            <h2>Meet Siya</h2>
+        <img src="images/crop-cloudy-mountainous-region-with-town.jpg" style="width:90%; opacity: 0.5;">
+        <div class="centered">
+          <h1>
+            <span class="responsive-text">Resume</br >
+          </h1>
+
+          <nav class="local">
+            <a href="#education">Education</a>
+            <a href="#technicalSkills">Technical Skills</a>
+            <a href="#projectsCourses">Projects and Relevant Courses</a>
+            <a href="#experience">Experience</a>
+            <a href="#achievementsAwards">Achievements and Awards</a>
+            <a href="#languages">Languages</a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="container">
+        <img src="images/ocean-scene.jpg" style="width:90%; opacity: 0.5;">
+        <div class="centered">
+          <article id="education">
+            <h2>
+              <span class="responsive-subtext">Education</br >
+            </h2>
             <p>
-              My name is Siya Sonpatki, a third-year undergraduate. As a student pursuing an Honors Bachelors in Computer Science with a concentration in A.I, I am looking for opportunities to build on my academic knowledge and gain industry experience while making impactful contributions through software development and collaboration with a team and clientele.
+                June 2026</br>
+                <bold>Oregon State University</bold>, Corvallis, OR </br>
+                Honors BS in Computer Science, Specialization in Artificial Intelligence, Minors in Spanish and Mathematics </br>
             </p>
 
             <p>
-              Given my proactive and curious nature, I am constantly searching for means to expand my knowledge and enhance my skills, both technically and interpersonally. In a recent collaborative project, I designed and implemented a software application using a microservices architecture, focusing on Python and ZeroMQ. Within our team, each member developed their own application and integrated a functionality created by a teammate into our individual projects. Additionally, I have begun designing and implementing a portfolio website to develop my proficiencies in coding languages, such as HTML, CSS, and JavaScript, as well as my knowledge of software concepts, such as communication pipelines, hosting platforms, and deployment.
+                June 2022</br>
+                <bold>The International School of Beaverton</bold>, Aloha, OR </br>
+                Completed the International Baccalaureate &#40;IB&#41; Diploma Programme
             </p>
+          </article>
+        </div>
+      </div>
 
-            <p>
-              I am excited for future opportunities to support and contribute to software engineering projects, and bridge my academic knowledge and professional capacities to deliver impactful Frontend solutions while growing as a software developer.
-            </p>
-        </article>
+      <div class="container">
+        <img src="images/ocean-scene.jpg" style="width:90%; opacity: 0.5;">
+        <div class="centered">
+          <article id="technicalSkills">
+            <h2>
+              <span class="responsive-subtext">Technical Skills</br >
+            </h2>
+            <dl>
+                <dt>Languages:</dt>
+                <dd>
+                    Python, Java, JavaScript C, C++, PHP, SQL, HTML, CSS, Assembly
+                </dd>
+                <dt>Tools:</dt>
+                <dd>
+                    Git, GitHub, Visual Studio, Visual Studio Code, Arduino, Netlify, GitHub Pages, Figma
+                </dd>
+                <dt>Databases:</dt>
+                <dd>
+                    PHP, MySQL, MongoDB
+                </dd>
+                <dt>Inter Process Communication:</dt>
+                <dd>
+                    ZeroMQ, HTTP, File I/O
+                </dd>
+                <dt>Frameworks:</dt>
+                <dd>
+                    Flask, Express
+                </dd>
+            </dl>
+          </article>
+        </div>
+      </div>
 
-        <article id="portfolioLinks">
-            <h2>Works & Projects</h2>
+
+      <div class="container">
+        <img src="images/ocean-scene.jpg" style="width:90%; opacity: 0.5;">
+        <div class="centered">
+          <article id="projectsCourses">
+            <h2>
+              <span class="responsive-subtext">Projects and Relevant Courses</br >
+            </h2>
+            <dl>
+                <dt>Sentiment Analysis Program, Introduction to A.I. | Python, Naïve Bayes Classifier</dt>
+                <dd> 
+                    <ul>
+                        <li>Implemented program to classify Yelp reviews as positive or negative using a Naïve Bayes classifier, 
+                            achieved over 90% accuracy on the training set and evaluated performance</li>
+                        <li>Pre-processed data by stripping punctuation and creating a vocabulary feature vector, then trained 
+                            classifier for dataset using Dirichlet priors and probability calculations</li>
+                    </ul>
+                </dd>
+
+                <dt>Event Planner, Introduction to Databases | Python, Jinja, Flask, MySQL, jQuery, HTTP</dt>
+                <dd> 
+                    <ul>
+                        <li>Developed a web-hosted, event management system using Python, Flask, and MySQL to implement CRUD
+                            functionalities for managing entities and intersection tables</li>
+                        <li>Designed and managed M:N relationships, developed drop-downs for foreign key selection, and ensured data
+                            integrity with CRUD functionality</li>
+                    </ul>
+                </dd>
+                
+                <dt>Personal Portfolio, Independent Project | JavaScript, HTML, CSS, Netlify, Serverless Architecture</dt>
+                <dd>
+                    <ul>
+                        <li>Utilized Figma for initial portfolio designs and developed the user interface with JavaScript, HTML, and CSS</li>
+                        <li>Deployed on Netlify with serverless architecture for fast deployment, high flexibility, and scalable hosting</li>
+                    </ul>
+                </dd>
+            </dl>
+          </article>
+        </div>
+      </div>
+
+
+      <div class="container">
+        <img src="images/ocean-scene.jpg" style="width:90%; opacity: 0.5;">
+        <div class="centered">
+
+          <article id="experience">
+            <h2>
+              <span class="responsive-subtext">Experience</br >
+            </h2>
+            <dl>
+                <dt>Partner, Starbucks Corporation, Portland, OR         Aug.2021 - Aug.2021</dt>
+                <dd> 
+                    <ul>
+                        <li>Developed interpersonal skills , communication , and active learning as a Starbucks barista</li>
+                        <li>Provided mentorship during development of new team members and addressed challenges in real-time
+                            during daily operations </li>
+                    </ul>
+                </dd>
+
+                <dt>Engineering Intern, Dell Corporation, Portland, OR (remote)         Jun. 2023 - Jun. 2023</dt>
+                <dd> 
+                    <ul>
+                        <li>Asynchronously worked on various projects, including website updates and code language conversion</li>
+                        <li>Contributed to operation of team by collaborating through various communication and task tracking
+                            software, including Zoom, Jira, and Microsoft Teams</li>
+                        <li>Collaborated with senior developers to contribute to creation and implementation of a content-security-
+                            policy for a CSG website using Golang</li>
+                    </ul>
+                </dd>
+                
+                <dt>Academic Tutor, Oregon State University ASA, Corvallis, OR (Sep. 2023 - Sep. 2023)</dt>
+                <dd>
+                    <ul>
+                        <li>Provided personalized tutoring across a range of undergraduate courses</li>
+                        <li>Tailoring teaching methods to individual learning styles to improve student understanding, while monitoring
+                            student progress</li>
+                        <li>Facilitated effective communication with supervisors and advisors regarding student success and
+                            personal availability, ensuring seamless coordination and contributing to efficient office management</li>
+                    </ul>
+                </dd>
+            </dl>
+          </article>
+        </div>
+      </div>
+
+
+      <div class="container">
+        <img src="images/ocean-scene.jpg" style="width:90%; opacity: 0.5;">
+        <div class="centered">
+          <article id="achievementsAwards">
+            <h2>
+              <span class="responsive-subtext">Achievements and Awards</br >
+            </h2>
+            <ul>
+                <li>Oregon State University College of Engineering Dean's List (Fall 2023, Winter 2024)</li>
+                <li>Oregon State University Academic Honor Roll (Fall 2022-Spring 2024) </li>
+                <li>Drucilla Shepard Smith Scholastic Award (2023)</li>
+                <li>Honors College Differential Scholarship (2023-2025)</li>
+                <li>Finley Academic Scholarship (2022-2026)</li>
+                <li>International Baccalaureate (IB) Scholarship (2022-2026)</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+
+      <div class="container">
+        <img src="images/ocean-scene.jpg" style="width:90%; opacity: 0.5;">
+        <div class="centered">
+          <article id="languages">
+            <h2>
+              <span class="responsive-subtext">Languages</br >
+            </h2>
+            <p>Spanish (intermediate)</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="container">
+        <img src="images/ocean-scene.jpg" style="width:90%; opacity: 0.5;">
+        <div class="centered">
+          <h2>
+            <span class="responsive-subtext">Important Links</br >
+          </h2>
             <p>
               Find GitHub Repository for this website at:
-              <a href="https://github.com/ssonpatki/serverless-project">Siya's GitHub Repo</a>
+              <a href="https://github.com/ssonpatki/serverless-project" style="color: aliceblue;">Siya's GitHub Repo</a>
                 
             </p>
             <p>
               Find Netlify Website:
-              <a href="https://siya-sonpatki-portfolio.netlify.app/">Siya's Portfolio</a>
+              <a href="https://siya-sonpatki-portfolio.netlify.app/" style="color: aliceblue;">Siya's Portfolio</a>
             </p>
-        </article>
+        </div>
       </div>
 
     </main>

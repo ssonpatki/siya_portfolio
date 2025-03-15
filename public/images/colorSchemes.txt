@@ -1,0 +1,20 @@
+coast-scene.jpg
+ --blue-grey-skies: #77BDD9
+ --ocean-blue: #03738C
+ --bright-blue-skies: #77DCF2
+ --rock-formation-brown: #734434
+
+
+cloudy-mountainous-region-with-town.jpeg
+ --white-grey: #EBEFF2
+ --deep-blue-grey: #193540
+ --grey-blue: #86A1B4
+ --dark-hunter-green: #142615
+ --forest-green: #22401E
+
+crop-cloudy-mountainous-region-with-town.jpg
+ --light-white-grey: #F2F2F2
+ --grey: #BFBFBF
+ --dark-grey: #595959
+ --grey-black: #262626
+ --black: #0D0D0D

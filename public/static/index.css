@@ -1,0 +1,494 @@
+/*  ===== MOBILE styles (reside at the top and are inherited by all devices) ===== */
+/*  ===== See tablet, desktop, and print @media queries at the bottom. */
+
+
+/*   ----- Imports  -----  */
+  /* @import 'node_modules/modern-normalize/modern-normalize.css';  npm install modern-normalize  Resets elements for browser consistency.  https://www.npmjs.com/package/modern-normalize */         
+  /* @import "component1.css";   Component-specific stylesheets, if any.   */
+  /* @import url(//fonts.googleapis.com/css?family=Font+Name); Add fonts from a hosted services like Google Fonts.   */
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap'); /* text-weight font */
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap'); /* heading font */
+
+/*   ----- Variables  -----  */
+:root {
+  --blue-grey-skies: #77BDD9;
+  --blue-grey-skies-opaque: #77bdd97e;
+  --ocean-blue: #03738C;
+  --bright-blue-skies: #77DCF2;
+  --rock-formation-brown: #734434;
+ 
+  --white-grey: #EBEFF2;
+  --white-grey-opaque: #ebeff29f;
+  --deep-blue-grey: #193540;
+  --grey-blue: #86A1B4;
+  --dark-hunter-green: #142615;
+  --forest-green: #22401E;
+
+  --light-white-grey: #F2F2F2;
+  --grey: #BFBFBF;
+  --dark-grey: #595959;
+  --grey-black: #262626;
+  --black: #0D0D0D;
+  }
+  
+  /*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+  body {       /* Can alternatively define in html {}. */
+    background: linear-gradient(90deg, var(--dark-grey), var(--black));
+    background-size: cover; /* Scale the background image to be as large as possible */
+    background-attachment: fixed; /* Make background image fixed during scrolling */
+    background-position: center; /* Center the background image */
+    color: var();
+    font-family: "Playfair Display", serif; /* Define with at least one font name and its related generic family name.*/
+    margin: 2% auto;
+    padding: 0;
+  }
+  .index {
+    max-width: 100%;
+    min-width: 500px;
+    background-blend-mode: overlay;
+  }
+  
+  /*  ----- Page layout blocks -----  */
+  header {
+    background-color: var();
+    color: var();
+    padding-left: 45px;
+    padding-right: 45px;
+    text-align: left;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+  }
+  .homeHeader {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+  }
+  header img {
+    max-width: 60px; /* Adjust the image size as needed */
+    height: auto;
+    border-left: 30px;
+  }
+  main {
+    background-color: var();
+    color: var();
+    margin: 5px;
+    padding: 20px;
+    border: 5px;
+  }
+  section {}
+  article {
+    padding: 10px;
+    background-color: var(--white-grey-opaque);
+  }
+    #topic1 {}
+    #topic2 {}
+  div {
+    font-family: "Playfair Display", serif; 
+    margin: 1% auto;
+    padding: 0;
+  }
+  
+  .container {
+    padding: 10px;
+    color: var(--white-grey-opaque);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .responsive-img {
+    width: 90%;
+    opacity: 0.5;
+    display: block;
+    margin: auto;
+    transition: opacity 0.3s ease;
+  }
+
+  .centered {
+    position: absolute;
+    width: 90%; /* Matches image width */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.responsive-text {
+    font-size: clamp(2rem, 8vw, 10rem);
+    font-weight: bold;
+    color: white;
+}
+
+.responsive-subtext {
+    font-size: clamp(1.5rem, 4vw, 5rem);
+    color: white;
+}
+  /* Bottom left text */
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+  /* Top left text */
+  .top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+  
+  /* Top right text */
+  .top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  }
+  
+  /* Bottom right text */
+  .bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+  }
+  
+  /* Centered text */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .subheading1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown:hover .dropdown-content {display: block;}
+  aside {}
+  footer {
+    background-color: var();
+    color: var();
+    margin: 5px;
+    padding: 5px;
+    border: 2px dashed var();
+    text-align: center;
+  }
+  
+  /* ----- Anchors ----- Text links */
+  a {}
+  a:link {}
+  .dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+  }
+  a:hover {}
+  a:hover .responsive-img {
+    opacity: 0.8; 
+  }
+  .dropdown-content a:hover {background-color: #ddd;}
+
+  a:active {}
+  a:visited {}
+  
+  /*  ----- Navigation ----- Override text links for navigation only.  */
+
+  nav {
+    display: flex;
+    gap: 20px; /* Space between links */
+  }
+  nav.local {
+    display: flex;
+    flex-flow: row wrap;
+    border: 1px;
+    text-align: center;
+  }
+  nav a {
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--light-white-grey);
+    border: 2px solid var(--light-white-grey);
+    border-radius: 20px; 
+    padding: 5px 10px;
+  }
+  .resumeLink {
+    color: var(--deep-blue-grey);
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Playfair Display", serif;
+  }
+  .resumeLink:hover {
+    color: var(--light-white-grey);
+    background-color: (var(--deep-blue-grey));
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Playfair Display", serif;
+  }
+
+  nav.local a {
+    display: inline-block;
+    background-color: var();
+    color: var();
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 2px;
+    border: 2px solid var();
+    border-radius: 5px;
+    text-align: center;
+  }
+  nav a:hover {
+    background-color: var(--light-white-grey);
+    color: var(--deep-blue-grey);
+    border: 2px solid var(--deep-blue-grey);
+    border-radius: 20px; 
+    padding: 5px 10px;
+    transition: background-color 0.05s ease, color 0.05s ease;
+  }
+  nav.local a:hover {
+    background-color: var();
+    color: var();
+    border: 0;
+  }
+  
+  /*  -----  Typography  ----- */
+  p {}
+  br {}
+  ol, ul, dl {}
+  li {}
+  dt {}
+  dd {}
+  
+  h1 {
+    font-family: "Bebas Neue", sans-serif;
+    align-items: center;
+  }
+  .typewriter {
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 5s steps(20) infinite alternate,
+               blink 800ms steps(20) infinite normal;
+    border-right: 5px solid black;
+  }
+  @keyframes typewriter {
+      from {
+          width: 0%;
+      }
+      to {
+          width: 50%; /* Adjust percentage to control text length visibility */
+      }
+  }
+  @keyframes blink {
+      from {
+          border-color: black;
+      }
+      to {
+          border-color: transparent;
+      }
+  }
+  h2, h3, h4, h5, h6 {font-family: "Bebas Neue", sans-serif;} 
+  h1 {}
+  h2 {}
+  h3 {}
+  h4 {}
+  h5 {}
+  h6 {}
+  
+  abbr {}
+  acronym {}
+  address {}
+  blockquote {}
+    q {}
+    cite {}
+  em {}
+  hr {}
+  mark {}
+  s {}
+  span {}
+  strong {}
+  sub {}
+  sup {}
+  time {}
+  
+  /*  ----- Coding or instructional typography ----- */
+  pre {
+    white-space: pre-wrap;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+  code {}
+  kbd {}
+  samp {}
+  var {}
+  del {} 
+  ins {}
+  
+  /*  ----- Table ----- */
+  table {}
+  caption {}
+  thead {}
+  tbody {}
+  tfoot {}
+  tr {}
+    tr:nth-child(even) {}
+  th {}
+  td {}
+    td:nth-child(1) {}
+  colgroup {}
+  data {}
+  datalist {}
+  
+  
+  /*  ----- Form ----- */
+  form {}
+  fieldset {
+    margin: 12px 0;
+    padding: 10px;
+    background-color: var();
+    border: 
+  }
+    legend {
+      color: var();
+      background-color: var();
+      border: 5px solid var();
+      padding: 10px;
+    }
+  label {
+    display: block;
+    color: var();
+    padding: 4px;
+  }
+  button {
+    color: var();
+    background-color: var();
+    border: 2px solid var();
+    padding: 10px;
+  }
+  .resumeButton {
+    background-color: var(--light-white-grey);
+  }
+  .resumeButton:hover {
+    background-color: var(--deep-blue-grey);
+  }
+  .dropbtn {
+    background-color: var(--light-white-grey);
+    color: white;
+    font-size: 20px;
+    border: none;
+  }
+  .dropdown:hover .dropbtn {background-color: var(--deep-blue-grey);}
+  input {
+    color: var();
+    background-color: var();
+    border: 1px solid var();
+    padding: 10px;
+  }
+  select {
+    color: var();
+    background-color: var();
+    border: 2px solid var();
+    padding: 10px;
+  }
+    optgroup {}
+    option {}
+  textarea {
+    color: var();
+    background-color: var();
+    border: 1px solid var();
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  output {}
+  meter {}
+  progress {}
+  
+  
+  /* ----- Media ----- */
+  figure {}
+    figcaption {}
+    figure img {}
+  svg {}
+  picture {}
+    source {}
+  iframe {}
+  video {}
+  audio {}
+  embed {}
+  object {}
+  
+  /*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+  .gallery {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0; 
+    padding: 2px;
+  }
+  .gallery figure {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    padding: 5px;
+    margin: 2px;
+    border: 3px solid var();
+    border-radius: 5px;
+    background-color: var();
+  }
+  .gallery img {
+    width: 100%; 
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+  .gallery figcaption {
+    display: block;
+    color: var();
+    padding: 2px 1px;
+    text-align: center;
+    width: 100%; 
+    
+  }
+  
+  .floatright {}
+  .floatleft {}
+  .center-middle {}
+  
+  .ten {}
+  .twenty {}
+  .thirty {}
+  .forty {}
+  .fifty {}
+  .sixty {}
+  .seventy {}
+  .eighty {}
+  
+  .radius {}
+  .circle {}
+  .boxshadow {}
+  .tshadow {} 
+  .gradient {}
+  .shape {}
+  
+  @keyframes App-logo {}
+  
+  /*   ===== TABLET  media query overrides mobile styles ===== */
+  @media all and (min-width: 600px) {}
+  
+  /*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+  @media all and (min-width: 1080px) {}
+  
+  /*   ===== PRINT  media query overrides previous styles =====  */
+  @media print {}
