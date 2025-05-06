@@ -104,7 +104,10 @@
     overflow: hidden;
   }
   .responsive-img {
+    max-height: 100vh;
+    height: auto;
     width: 90%;
+    height: 50%;
     opacity: 0.5;
     display: block;
     margin: auto;
@@ -130,16 +133,16 @@
   .center-left {
     position: absolute;
     top: 30%;
-    left: 5%;
+    left: 2%;
   }
   .center-right {
     position: absolute;
     top: 30%;
-    right: 5%;
+    right: 2%;
   }
 
 .responsive-text {
-    font-size: clamp(2rem, 8vw, 10rem);
+    font-size: clamp(2rem, 6vw, 8rem);
     font-weight: bold;
     color: white;
 }
@@ -203,7 +206,7 @@
   aside {}
   footer {
     background-color: var();
-    color: var();
+    color: var(--blue-grey-skies-opaque);
     margin: 5px;
     padding: 5px;
     border: 2px dashed var();

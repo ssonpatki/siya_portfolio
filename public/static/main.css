@@ -149,7 +149,7 @@
   aside {}
   footer {
     background-color: var();
-    color: var();
+    color: var(--blue-grey-skies-opaque);
     margin: 5px;
     padding: 5px;
     border: 2px dashed var();

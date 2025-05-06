@@ -126,11 +126,22 @@
     color: white;
 }
 .responsive-body{
-    font-size: clamp(1rem, 2vw, 1.5rem);
-    font-weight: bold;
-    color: white;
+    text-align: left;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    color: whitesmoke;
     max-width: 80%;
     margin: 0 auto;
+}
+.resume-button{
+  text-align: left;
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  font-weight: bold;
+  color: var(--deep-blue-grey);
+  max-width: 80%;
+  margin: 10px auto;
+  background-color:aliceblue; 
+  padding: 1%;
+  border: 2px solid black;
 }
   /* Bottom left text */
   .bottom-left {
@@ -188,7 +199,7 @@
   aside {}
   footer {
     background-color: var();
-    color: var();
+    color: var(--blue-grey-skies-opaque);
     margin: 5px;
     padding: 5px;
     border: 2px dashed var();
